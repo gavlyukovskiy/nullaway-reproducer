@@ -18,6 +18,12 @@ dependencies {
     errorprone("com.uber.nullaway:nullaway:0.11.1")
 }
 
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(22)
+    }
+}
+
 tasks {
     withType<JavaCompile>().configureEach {
         options.errorprone {
