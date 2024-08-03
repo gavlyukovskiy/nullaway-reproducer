@@ -1,0 +1,27 @@
+# IntelliJ settings
+.idea
+
+# MacOS file system
+.DS_Store
+
+# Build files
+**/build/
+!src/**/build/
+out
+
+# Java
+*.class
+
+# Java archives
+*.jar
+*.war
+*.ear
+
+# Gradle
+.gradle
+.gradletasknamecache
+gradle-app.setting
+
+
+# Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
+!gradle-wrapper.jar
