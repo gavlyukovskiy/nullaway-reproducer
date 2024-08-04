@@ -13,7 +13,6 @@ repositories {
 }
 
 dependencies {
-    implementation("org.jspecify:jspecify:1.0.0")
     errorprone("com.google.errorprone:error_prone_core:2.29.2")
     errorprone("com.uber.nullaway:nullaway:0.11.1")
 }
@@ -29,7 +28,6 @@ tasks {
         options.errorprone {
             disableAllChecks = true
             error("NullAway")
-            option("NullAway:JSpecifyMode")
             option("NullAway:AnnotatedPackages", "com.github.gavlyukovskiy")
         }
         options.encoding = "UTF-8"
